@@ -24,7 +24,7 @@ document.body.addEventListener("click", (e) => {
   }
 });
 
-//playGame();
+//functions
 
 function getComputerChoice() {
   let random = Math.floor(Math.random() * 3) + 1;
@@ -40,22 +40,6 @@ function getComputerChoice() {
 function getHumanChoice() {
   let choice = prompt('Type "rock", "paper" or "scissors"');
   return choice;
-}
-
-function playGame() {
-  if (humanScore > computerScore) {
-    console.log("You've won!");
-    console.log("Your score:" + humanScore);
-    console.log("Score of the Computer:" + computerScore);
-  } else if (computerScore > humanScore) {
-    console.log("You've lost!");
-    console.log("Your score:" + humanScore);
-    console.log("Score of the Computer:" + computerScore);
-  } else {
-    console.log("It's a tie!");
-    console.log("Your score:" + humanScore);
-    console.log("Score of the Computer:" + computerScore);
-  }
 }
 
 function playRound(humanChoice, computerChoiceCallback) {
